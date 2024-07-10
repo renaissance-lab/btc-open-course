@@ -23,3 +23,4 @@ go.work.sum
 address/address
 taproot/taproot
 atomicals-go/atomicals-go
+runes-go/runes-go
