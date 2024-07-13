@@ -81,7 +81,7 @@ func AppendMintUpdatedRevealScript(protocol, opType string, internalKey *btcec.P
 	fmt.Printf("calcPubkey %x\n ", (calcPubkey))
 	address, err := btcutil.NewAddressTaproot(calcPubkey, &chaincfg.MainNetParams)
 	fmt.Printf("address %v, err %v\n", address, err)
-	return p2trScript, calcPubkey, nil
+	return pkScript, calcPubkey, nil
 
 }
 func GenerateP2TRAtomScriptAddress(keyStr, protocol, opType, bitworkr, bitworkc, mintTicker string, timeUnix, nonce int64, net *chaincfg.Params) (string, string, error) {
